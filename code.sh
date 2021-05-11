@@ -12,6 +12,12 @@ for i in /proj/sens2019581/data/WES_promix/*
 do ln -s $i   #创建数据链接 ln
 done
 
-salloc -A sens2019581 -t 04:00:00 -p core -n 1 --no-shell --reservation=sens2019581 &
+cat >BWA.sh
 
+#!/bin/bash -l
+#SBATCH -A sens2019581
+#SBATCH -p node
+#SBATCH -n 8
+#SBATCH -t 24:00:00
+#SBATCH -J bwa
 bwa index -a bwtsw /home/kangwang/WES/reference/genome.fa
