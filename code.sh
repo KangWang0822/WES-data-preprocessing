@@ -5,7 +5,7 @@ module load samtools/1.10
 module load GATK/4.1.4.1
 
 cd /home/kangwang/WES/reference
-ln -s /sw/data/igenomes/Homo_sapiens/Ensembl/GRCh37/Sequence/WholeGenomeFasta/genome.fa
+ln -s /sw/GATK/hg38
 
 cd /home/kangwang/WES/data
 for i in /proj/sens2019581/data/WES_promix/*
