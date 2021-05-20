@@ -1,6 +1,7 @@
 ######################################
 #######germline variants calling######
 ######################################
+cd /proj/g2021013/nobackup/kangwang/ngsworkflow
 module load bioinfo-tools
 module load FastQC/0.11.8
 module load bwa/0.7.17
