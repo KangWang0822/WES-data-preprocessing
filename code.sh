@@ -1,3 +1,9 @@
+input=""
+for sample in HG*.g.vcf;
+do
+ input=$input" -V $sample"
+done
+echo "gatk --java-options -Xmx7g CombineGVCFs -R human_g1k_v37_chr2.fasta $input -O cohort.g.vcf"
 ######################################
 #######germline variants calling######
 ######################################
