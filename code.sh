@@ -54,6 +54,7 @@ gatk --java-options -Xmx7g MergeVcfs -I cohort.snvs.filtered.vcf -I cohort.indel
 
 
 #########################
+#!/bin/bash -l
 #SBATCH -A g2021013
 #SBATCH -p core
 #SBATCH -n 1
